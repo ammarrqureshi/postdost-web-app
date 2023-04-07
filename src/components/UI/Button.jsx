@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import styled, { css } from 'styled-components'
 
 // This is a test button component... use this for all buttons, do not care for css, can be adjusted later.
@@ -60,7 +61,23 @@ transition-duration: 350ms;
  
 `
 <<<<<<< HEAD
+<<<<<<< HEAD
 export default Button;
 =======
 export default Button
 >>>>>>> dc05564 (Explore Page)
+=======
+=======
+import React from 'react'
+
+const Button = ( props ) => {
+  return (
+    <div>
+    <button onClick={props.onClick} value={props.value}>{props.children}</button>
+    </div>
+  )
+}
+
+>>>>>>> 7e53f72 (initial commit)
+export default Button
+>>>>>>> d6755db (initial commit)
