@@ -5,6 +5,8 @@ import dotenv from "dotenv";
 import session from "express-session";
 import { dbConnection } from "./database";
 import CustomError from "./errors/CustomError";
+import globalErrors from "./middleware/globalErrors.middleware";
+import unhandledRoutes from "./middleware/unhandledRoutes.middleware";
 const MongoDBStore = require("connect-mongodb-session")(session);
 
 // Load environment variables from file
@@ -66,5 +68,8 @@ if (NODE_ENV === "development") {
     res.sendFile(join(__dirname, "..", "build", "index.html"));
   });
 }
+
+app.use("*", unhandledRoutes);
+app.use(globalErrors);
 
 export default app;
