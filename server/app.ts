@@ -142,6 +142,7 @@ if (env === "production") {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 app.use("*", unhandledRoutes);
 app.use(globalErrors);
 =======
@@ -150,4 +151,9 @@ app.use(globalErrors);
 
 =======
 >>>>>>> d303f0d (connect with mongoDB)
+=======
+app.use("*", unhandledRoutes);
+app.use(globalErrors);
+
+>>>>>>> a7c9aa0 (create globalErrors & unhandleRoutes  middleware)
 export default app;
