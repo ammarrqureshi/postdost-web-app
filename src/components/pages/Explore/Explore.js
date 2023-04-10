@@ -3,7 +3,7 @@ import React from 'react'
 const Explore = () => {
   return (
     <div>Explore
-        This is Explore Page
+        This is Test Explore Page
     </div>
   )
 }
