@@ -12,10 +12,15 @@ dist
 dist-ssr
 *.local
 <<<<<<< HEAD
+<<<<<<< HEAD
 .env
 =======
 
 >>>>>>> 24d1d62 (created react project)
+=======
+.env
+node_modules
+>>>>>>> fa79130 (updated .gitignore from server-side-m)
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
