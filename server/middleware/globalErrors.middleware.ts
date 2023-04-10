@@ -14,11 +14,4 @@ export default function globalErrors(
   return res
     .status(500)
     .json(new CustomError(err.message, 500, err.name).toJSON());
-  // return res.status(500).json({
-  //   error: {
-  //     name: "ServerError",
-  //     message: `Internal server error :{}`,
-  //     statusCode: 500,
-  //   },
-  // });
 }
