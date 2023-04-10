@@ -24,8 +24,13 @@
     "styled-components": "^5.3.9"
 =======
     "react": "^18.2.0",
+<<<<<<< HEAD
     "react-dom": "^18.2.0"
 >>>>>>> 24d1d62 (created react project)
+=======
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.9"
+>>>>>>> 735b7fd (directory structure initial commit)
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
