@@ -15,6 +15,7 @@ export default function globalErrors(
     .status(500)
     .json(new CustomError(err.message, 500, err.name).toJSON());
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   // return res.status(500).json({
   //   error: {
@@ -24,4 +25,6 @@ export default function globalErrors(
   //   },
   // });
 >>>>>>> a7c9aa0 (create globalErrors & unhandleRoutes  middleware)
+=======
+>>>>>>> 8ff5784 (fix  globalErrors  middleware)
 }
