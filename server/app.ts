@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import { join } from "path";
 import dotenv from "dotenv";
+<<<<<<< HEAD
 import session from "express-session";
 import { dbConnection } from "./database";
 import CustomError from "./errors/CustomError";
@@ -63,13 +64,45 @@ if (NODE_ENV === "development") {
 } else if (NODE_ENV === "production") {
   // app.use(cors({ origin: "https://example.com" }));
   // Serve static files and fallback to index.html for production environment
+=======
+
+dotenv.config();
+
+const app = express();
+const port = process.env.PORT || 3000;
+const env = process.env.NODE_ENV || "development";
+
+app.set("port", port );
+app.set("env", env );
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+if (env === "production") {
+  // app.use(cors({ origin: "https://example.com" }));
+} else {
+  app.use(cors());
+}
+
+if (env === "development") {
+  app.get("/", (req, res) => {
+    res.json({ message: "Server Is Running" });
+  });
+}
+
+if (env === "production") {
+>>>>>>> eb64425 (setup the server)
   app.use(express.static(join(__dirname, "..", "build")));
   app.get("*", (req, res) => {
     res.sendFile(join(__dirname, "..", "build", "index.html"));
   });
 }
 
+<<<<<<< HEAD
 app.use("*", unhandledRoutes);
 app.use(globalErrors);
+=======
+
+>>>>>>> eb64425 (setup the server)
 
 export default app;
