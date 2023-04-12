@@ -1,0 +1,9 @@
+
+.subscriptionCard{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}

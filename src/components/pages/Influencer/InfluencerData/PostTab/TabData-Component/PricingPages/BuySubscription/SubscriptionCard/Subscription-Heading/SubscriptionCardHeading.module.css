@@ -1,0 +1,38 @@
+
+.subsHeading{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+
+.subsHeading h1,p,label,h2{
+  margin: 0;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.subsHeading h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.subsHeading p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.subsHeading label{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.subsHeading label>span{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.subsHeading h2{
+    font-size: 22px;
+    font-weight: bold;
+}

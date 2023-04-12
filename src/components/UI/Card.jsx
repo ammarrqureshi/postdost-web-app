@@ -29,7 +29,11 @@ box-shadow: 10px 10px 10px rgba(0,0,0, .8);
 `
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 export default Card
 =======
 export default Card
 >>>>>>> dc05564 (Explore Page)
+=======
+export default Card;
+>>>>>>> af25f29 (Pages created but it is not complete)

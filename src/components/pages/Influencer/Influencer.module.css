@@ -1,5 +1,6 @@
 
 .influencerPage{
+<<<<<<< HEAD
       max-width: 90vw;
       margin-left: auto;
       padding: 2.5rem 0;
@@ -321,3 +322,15 @@ max-height:100vh;
     grid-template-columns: repeat(3,1fr);
     column-gap: 1.25rem;
 }
+=======
+    /* background-color: rgb(87, 56, 11); */
+    max-width: 85vw;
+    /* width: 100%; */
+    height: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 2.7fr;
+    column-gap: 2.5rem;
+    padding-top: 1rem;
+}
+>>>>>>> af25f29 (Pages created but it is not complete)

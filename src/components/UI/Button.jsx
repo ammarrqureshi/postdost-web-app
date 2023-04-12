@@ -12,6 +12,7 @@ const Button = styled.button`
   outline: none;
   width: auto;
   display: inline-block;
+<<<<<<< HEAD
             width: auto;
   background: var(--primary-purple);
   color: white;
@@ -31,6 +32,19 @@ const Button = styled.button`
   }
 =======
   box-sizing: border-box;
+=======
+  border-radius: ${props => props.borderRadius || '3px'};
+  padding: ${props => props.Padding || '0.5rem 0' };
+  // margin: 0.5rem 1rem;
+  width: 9rem;
+  background: ${props => props.Color || 'red'};
+  color: ${props => props.textColor || 'white'};
+  border: ${props => props.border || '2px solid white'};
+  font-family:'Raleway', sans-serif;
+  font-size: ${props => props.fontSize || '16px'};
+  font-weight: ${props => props.fontWeight || 'normal'};
+  opacity: ${props => props.Opacity || '100%'}
+>>>>>>> 571af8b (Pages created but it is not complete)
 
 >>>>>>> dc05564 (Explore Page)
   &:hover {
@@ -137,6 +151,13 @@ transition-duration: 350ms;
   `}
  
 `
+<<<<<<< HEAD
 >>>>>>> 735b7fd (directory structure initial commit)
 export default Button
+<<<<<<< HEAD
 >>>>>>> b8d6e05 (directory structure initial commit)
+=======
+=======
+export default Button;
+>>>>>>> 571af8b (Pages created but it is not complete)
+>>>>>>> af25f29 (Pages created but it is not complete)

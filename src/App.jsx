@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import './App.css'
 import Influencer from './components/pages/Influencer/Influencer';
 
@@ -13,6 +14,8 @@ function App() {
 =======
 =======
 >>>>>>> 08c1caf (first commit after rebase)
+=======
+>>>>>>> af25f29 (Pages created but it is not complete)
 import Explore from './components/pages/Explore/Explore';
 import ExploreProvider from './contexts/ExploreContext';
 import SignUp from './components/pages/SignUp/SignUp';
@@ -92,4 +95,23 @@ function App() {
 
 export default App
 >>>>>>> 24d1d62 (created react project)
+<<<<<<< HEAD
 >>>>>>> 08c1caf (first commit after rebase)
+=======
+=======
+// import { useState } from 'react'
+// import Logo from './assets/logo.png'
+import './App.css'
+// import Button from './components/UI/Button'
+// import Card from './components/UI/Card'
+import Influencer from './components/pages/Influencer/Influencer'
+
+function App() {
+  return (
+    <Influencer></Influencer>
+  )
+}
+
+export default App;
+>>>>>>> 571af8b (Pages created but it is not complete)
+>>>>>>> af25f29 (Pages created but it is not complete)

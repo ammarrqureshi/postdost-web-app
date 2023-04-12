@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap");
   :root {
     font-size: 16px;
@@ -38,6 +39,8 @@
 >>>>>>> 08c1caf (first commit after rebase)
 =======
 >>>>>>> 6c07fd0 (added all basic UI components in components/UI)
+=======
+>>>>>>> af25f29 (Pages created but it is not complete)
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap');
 @tailwind base;
 @tailwind components;
@@ -191,4 +194,13 @@ html{
   
 }
 >>>>>>> c95ca69 (page heading class added)
+<<<<<<< HEAD
 >>>>>>> ce7ba90 (page heading class added)
+=======
+=======
+:root {
+    --primary-color: #5E17EB;
+    --secondary-color: #0E0E0E;
+  }
+>>>>>>> 571af8b (Pages created but it is not complete)
+>>>>>>> af25f29 (Pages created but it is not complete)

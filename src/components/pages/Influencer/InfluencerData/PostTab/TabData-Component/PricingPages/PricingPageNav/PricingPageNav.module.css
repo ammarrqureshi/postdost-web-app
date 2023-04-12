@@ -1,0 +1,9 @@
+
+.pricingNav{
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    background-color: rgba(94, 23, 235, 0.1);
+    padding: 0.5rem 2rem;
+    border-radius: 60px;
+}

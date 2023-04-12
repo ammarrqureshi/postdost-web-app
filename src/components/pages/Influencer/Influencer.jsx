@@ -1,12 +1,22 @@
+<<<<<<< HEAD
 import classes from './Influencer.module.css';
 import InfluencerCard from './InfluencerCard/InfluencerCard';
 import InfluencerNavData from './InfluencerNavbarContent/InfluencerNavData';
 import TabProvider from './../../../contexts/TabProvider';
 import InfluencerProvider from '../../../contexts/InfluencerProvider';
+=======
+import React from 'react';
+import classes from './Influencer.module.css';
+// import Card from '../../UI/Card';
+import InfluencerCard from './InfluencerCard/All-Card-Components/InfluencerCard';
+import TabData from './InfluencerData/PostTab/TabData-Component/TabData';
+import TabProvider from '../../../ContextStore/TabProvider';
+>>>>>>> af25f29 (Pages created but it is not complete)
 
 const Influencer = () => {
   return (
     <TabProvider>
+<<<<<<< HEAD
       <InfluencerProvider>
       <section className={classes.influencerPage}>
        <InfluencerCard> </InfluencerCard>
@@ -14,6 +24,14 @@ const Influencer = () => {
     </section>
     </InfluencerProvider>
     </TabProvider>
+=======
+      <section className={classes.influencerPage}>
+       <InfluencerCard> </InfluencerCard>
+       <TabData> </TabData>
+    </section>
+    </TabProvider>
+   
+>>>>>>> af25f29 (Pages created but it is not complete)
   )
 }
 
