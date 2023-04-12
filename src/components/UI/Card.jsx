@@ -12,4 +12,4 @@ color: #0e0e0e;
 box-shadow: 10px 10px 10px rgba(0,0,0, .8);
 `
 
-export default Card
+export default Card;

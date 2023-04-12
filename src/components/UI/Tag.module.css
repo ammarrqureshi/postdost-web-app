@@ -1,0 +1,14 @@
+
+
+.tag h1{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: var(--secondary-color);
+    opacity: 0.45;
+    background-color: rgb(210, 218, 218);
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+

@@ -1,0 +1,12 @@
+
+.influencerPage{
+    /* background-color: rgb(87, 56, 11); */
+    max-width: 85vw;
+    /* width: 100%; */
+    height: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 2.7fr;
+    column-gap: 2.5rem;
+    padding-top: 1rem;
+}

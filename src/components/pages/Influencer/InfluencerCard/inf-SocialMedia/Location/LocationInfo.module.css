@@ -1,0 +1,19 @@
+.locationInfo{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.locationInfo img{
+    max-width: 100%;
+    width: 24px;
+    height: 24px;
+}
+
+.locationInfo label{
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: var(--secondary-color);
+    opacity: 0.5;
+}

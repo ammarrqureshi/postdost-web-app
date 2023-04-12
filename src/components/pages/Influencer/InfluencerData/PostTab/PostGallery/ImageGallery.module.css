@@ -1,0 +1,19 @@
+
+.imageGallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: min-content;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.imgWrapper{
+ max-width: 100%;
+}
+
+.imgWrapper img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
