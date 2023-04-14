@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import './index.css';
 import App from './App';
 =======
@@ -10,6 +11,10 @@ import App from './App'
 import './index.css';
 >>>>>>> dc05564 (Explore Page)
 =======
+=======
+=======
+>>>>>>> ac81d60 (added all basic UI components in components/UI)
+>>>>>>> 6c07fd0 (added all basic UI components in components/UI)
 import './index.css'
 import App from './App'
 import './index.css';

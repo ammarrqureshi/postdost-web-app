@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap");
   :root {
     font-size: 16px;
@@ -35,6 +36,8 @@
 =======
 =======
 >>>>>>> 08c1caf (first commit after rebase)
+=======
+>>>>>>> 6c07fd0 (added all basic UI components in components/UI)
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap');
 @tailwind base;
 @tailwind components;
@@ -48,6 +51,17 @@
   /* CSS Variables */
   --primary-purple: #5e17eb;
   --secondary-grey: rgba(216, 197, 255, 0.7);
+=======
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap");
+:root {
+    font-size: 16px;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+
+  /* CSS Variables */
+  --primary-purple: #5e17eb;
+  --secondary-grey: rgba(216,197,255,0.7);
+>>>>>>> ac81d60 (added all basic UI components in components/UI)
   --black: #0e0e0e;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -57,6 +71,7 @@
 
   --box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
 }
+<<<<<<< HEAD
 
 html {
   font-size: 16px;
@@ -151,4 +166,12 @@ button:focus-visible {
   }
 }
 >>>>>>> 24d1d62 (created react project)
+<<<<<<< HEAD
 >>>>>>> 08c1caf (first commit after rebase)
+=======
+=======
+html{
+    font-size: 16px;
+}
+>>>>>>> ac81d60 (added all basic UI components in components/UI)
+>>>>>>> 6c07fd0 (added all basic UI components in components/UI)

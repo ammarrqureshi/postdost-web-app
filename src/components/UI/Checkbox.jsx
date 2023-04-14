@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { useState } from "react";
 const Checkbox = ({ label, checked, ...props }) => {
   const defaultChecked = checked ? checked : false;
   const [isChecked, setIsChecked] = useState(defaultChecked);
 =======
+=======
+>>>>>>> 6c07fd0 (added all basic UI components in components/UI)
 import { useState } from 'react';
 const Checkbox = (props) => {
   //value or setValue are useState values!
@@ -21,7 +24,16 @@ const Checkbox = (props) => {
       });
     }
   };
+<<<<<<< HEAD
 >>>>>>> dc05564 (Explore Page)
+=======
+=======
+import { useState } from "react";
+const Checkbox = ({ label, checked, ...props }) => {
+  const defaultChecked = checked ? checked : false;
+  const [isChecked, setIsChecked] = useState(defaultChecked);
+>>>>>>> ac81d60 (added all basic UI components in components/UI)
+>>>>>>> 6c07fd0 (added all basic UI components in components/UI)
   return (
     <>
       <style>
@@ -72,17 +84,28 @@ const Checkbox = (props) => {
             type="checkbox"
             checked={isChecked}
 <<<<<<< HEAD
+<<<<<<< HEAD
             className={isChecked ? "checked" : ""}
             onChange={() => setIsChecked((prev) => !prev)}
             {...props}
 =======
+=======
+>>>>>>> 6c07fd0 (added all basic UI components in components/UI)
             className={isChecked ? 'checked' : ''}
             onChange={handleChange}
             id={id}
             name={name}
             value={value}
             // {...props}
+<<<<<<< HEAD
 >>>>>>> dc05564 (Explore Page)
+=======
+=======
+            className={isChecked ? "checked" : ""}
+            onChange={() => setIsChecked((prev) => !prev)}
+            {...props}
+>>>>>>> ac81d60 (added all basic UI components in components/UI)
+>>>>>>> 6c07fd0 (added all basic UI components in components/UI)
           />
           <span>{label}</span>
         </label>
