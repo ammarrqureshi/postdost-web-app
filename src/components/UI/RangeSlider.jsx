@@ -50,7 +50,6 @@ export default function RangeSlider(props) {
 =======
 =======
 import { useState } from 'react' 
-import "./RangeSlider.css"
 import Slider from '@mui/material/Slider';
 
 
