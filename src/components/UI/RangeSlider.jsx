@@ -51,6 +51,7 @@ export default function RangeSlider(props) {
 =======
 import { useState } from 'react' 
 import Slider from '@mui/material/Slider';
+import "./RangeSlider.css"
 
 function valuetext(value) {
   return `${value}CC`;
@@ -187,43 +188,7 @@ export default function RangeSlider(props) {
  
   return (
 <>
-    <style>
-
-        {
-            `
-            .css-187mznn-MuiSlider-root{
-                color: var(--primary-purple);
-                box-sizing: border-box;
-                width: 99%;
-               
-            
-            }
-            .css-eg0mwd-MuiSlider-thumb:hover{
-                box-shadow: none;
-                
-            }
-            .css-eg0mwd-MuiSlider-thumb:active{
-                box-shadow: none;
-                
-            }
-            
-            css-eg0mwd-MuiSlider-thumb.Mui-active{
-                box-shadow: none;
-                
-            }
-            
-            .css-nnid7-MuiSlider-valueLabel{
-                background: var(--black);
-                padding: 0.15em 0.75em;
-                font-size: 0.8em;
-                
-            
-            } 
-            `
-        }
-
-    </style>
-
+   
     
   
       <Slider
