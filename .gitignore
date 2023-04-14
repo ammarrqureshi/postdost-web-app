@@ -19,8 +19,11 @@ dist-ssr
 >>>>>>> 24d1d62 (created react project)
 =======
 .env
+<<<<<<< HEAD
 node_modules
 >>>>>>> fa79130 (updated .gitignore from server-side-m)
+=======
+>>>>>>> 6a4e372 (dependency error resolved)
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
