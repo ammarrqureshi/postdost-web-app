@@ -11,7 +11,7 @@ const minDistance = 5;
 export default function RangeSlider(props) {
 
 
-  const [value, setValue1] = useState([props.min, props.max]);
+  const [value, setValue] = useState([props.min, props.max]);
 
   const handleChange = (event, newValue, activeThumb) => {
     if (!Array.isArray(newValue)) {
