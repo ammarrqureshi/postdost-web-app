@@ -5,7 +5,11 @@ const Link = styled.a`
   color: ${props => props.color || 'var(--Black)'};
   text-decoration: none;
   cursor: pointer;
+<<<<<<< HEAD
   font-size: ${props => props.fontSize || '1rem'};
+=======
+  font-size: ${props => props.fontSize || '16px'};
+>>>>>>> aa05bb4 (Small section left and some little styling)
   cursor: pointer;
   opacity: ${props => props.opacity || '0.40'};
   font-weight: ${props => props.fontWeight || 'var(--font-weight-bold)'};

@@ -14,21 +14,33 @@ function PricingTabNavbar(){
         <div className={`${classes.tabelement} ${activePricingTab===0 ? classes.activePriceTab : ''}`} 
         onClick={()=> setActivePricingTab(0)}>
         <TabSvg color={activePricingTab==0? 'white' : greyClr}
+<<<<<<< HEAD
          width='1.125rem' height ='1.125rem'></TabSvg>
+=======
+         width='18px' height ='18px'></TabSvg>
+>>>>>>> aa05bb4 (Small section left and some little styling)
         <span>Buy a post</span>
         </div>
        {/* ............................................. */}
         <div className={`${classes.tabelement} ${activePricingTab==1 ? classes.activePriceTab : ''}`} 
         onClick={()=> setActivePricingTab(1)}>
         <TabSvg color={activePricingTab==1? 'white' : greyClr}
+<<<<<<< HEAD
           width='1.125rem' height ='1.125rem'></TabSvg>
+=======
+         width='18px' height ='18px'></TabSvg>
+>>>>>>> aa05bb4 (Small section left and some little styling)
        <span>Get a subscription</span>
        </div>
        {/* ............................................... */}
       <div className={`${classes.tabelement} ${activePricingTab==2 ? classes.activePriceTab : ''}`} 
        onClick={()=> setActivePricingTab(2)}>
       <TabSvg color={activePricingTab==2? 'white' : greyClr}
+<<<<<<< HEAD
         width='1.125rem' height ='1.125rem'></TabSvg>
+=======
+       width='18px' height ='18px'></TabSvg>
+>>>>>>> aa05bb4 (Small section left and some little styling)
       <span>New campaign</span>
       </div>
     </section>

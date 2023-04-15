@@ -1,9 +1,15 @@
 
 .influencerPage{
 <<<<<<< HEAD
+<<<<<<< HEAD
       max-width: 90vw;
       margin-left: auto;
       padding: 2.5rem 0;
+=======
+      max-width: 90vw;
+      margin-left: auto;
+      padding: 40px 0;
+>>>>>>> aa05bb4 (Small section left and some little styling)
       display: grid;
       grid-template-columns: 1fr 3fr;
       column-gap: 2.5rem;
@@ -14,6 +20,7 @@
 /* !______________________Influencer Card Components Styling___________________________ */
 /* ?Influencer Card Text */
 
+<<<<<<< HEAD
 .influencerCard{
       
       box-sizing: border-box;
@@ -32,12 +39,18 @@ justify-content: center;
 max-height:100vh;
 }
 
+=======
+>>>>>>> aa05bb4 (Small section left and some little styling)
 .cardText{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     row-gap: 0.625rem;
+=======
+    row-gap: 10px;
+>>>>>>> aa05bb4 (Small section left and some little styling)
 
 }
 
@@ -46,21 +59,33 @@ max-height:100vh;
 }
 
 .cardText h1{
+<<<<<<< HEAD
     font-size: 1.375rem;
+=======
+    font-size: 22px;
+>>>>>>> aa05bb4 (Small section left and some little styling)
     /* font-weight: bold; */
     font-weight: var(--font-weight-bold);
     color: var(--black);
 }
 
 .cardText h2{
+<<<<<<< HEAD
     font-size: 0.875rem;
+=======
+    font-size: 14px;
+>>>>>>> aa05bb4 (Small section left and some little styling)
     color: var(--black);
     opacity: 0.45;
     font-weight: var(--font-weight-semibold);
 }
 
 .cardText h3{
+<<<<<<< HEAD
     font-size: 0.875rem;
+=======
+    font-size: 14px;
+>>>>>>> aa05bb4 (Small section left and some little styling)
     color: var(--black);
     opacity: 0.45;
     font-weight: var(--font-weight-semibold);
@@ -69,16 +94,24 @@ max-height:100vh;
 /* ?Influencer Image Component */
 .profileimg img{
     max-width: 100%;
+<<<<<<< HEAD
     width: 7.5rem;
     height: 7.5rem;
     border-radius: 6.25rem;
     border:  0.1875rem solid var(--black);
+=======
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    border: 3px solid var(--black);
+>>>>>>> aa05bb4 (Small section left and some little styling)
 }
 
 /* ?Add to favourite Component*/
 .addtoFavourite{
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     column-gap: 0.625rem;
     align-items: center;
     justify-content: center;
@@ -87,23 +120,46 @@ max-height:100vh;
 
 .addtoFavourite img{
     width: 1.375rem;
+=======
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.addtoFavourite img{
+    width: 22px;
+>>>>>>> aa05bb4 (Small section left and some little styling)
     height: 100%;
 }
 /* ?Social Media and Location */
 .instaInfo{
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     column-gap: 0.9375rem;
+=======
+    column-gap: 15px;
+>>>>>>> aa05bb4 (Small section left and some little styling)
 }
 
 .instaInfo img{
     max-width: 100%;
+<<<<<<< HEAD
     width: 0.875rem;
     height: 0.875rem;
 }
 
 .instaInfo label{
     font-size: 0.75rem;
+=======
+    width: 14px;
+    height: 14px;
+}
+
+.instaInfo label{
+    font-size: 12px;
+>>>>>>> aa05bb4 (Small section left and some little styling)
     font-weight: var(--font-weight-bold);
     color: var(--black);
     opacity: 0.45;
@@ -112,17 +168,30 @@ max-height:100vh;
 .locationInfo{
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     column-gap: 0.9375rem;
+=======
+    column-gap: 15px;
+>>>>>>> aa05bb4 (Small section left and some little styling)
 }
 
 .locationInfo img{
     max-width: 100%;
+<<<<<<< HEAD
     width: 1.125rem;
     height: 1.125rem;
 }
 
 .locationInfo label{
     font-size: 0.75rem;
+=======
+    width: 18px;
+    height: 18px;
+}
+
+.locationInfo label{
+    font-size: 12px;
+>>>>>>> aa05bb4 (Small section left and some little styling)
     font-weight: var(--font-weight-bold);
     color: var(--black);
     opacity: 0.45;
@@ -132,8 +201,13 @@ max-height:100vh;
 .socialMediaLinks{
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     row-gap: 1.25rem;
     padding: 1.25rem 0;
+=======
+    row-gap: 20px;
+    padding: 20px 0;
+>>>>>>> aa05bb4 (Small section left and some little styling)
 }
 
 /* ?Tag Component */
@@ -142,7 +216,11 @@ max-height:100vh;
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr;
+<<<<<<< HEAD
    gap: 0.625rem;
+=======
+   gap: 10px;
+>>>>>>> aa05bb4 (Small section left and some little styling)
 }
 
 /* .................................................................................. */
@@ -160,7 +238,11 @@ max-height:100vh;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     column-gap: 3.75rem;
+=======
+    column-gap: 60px;
+>>>>>>> aa05bb4 (Small section left and some little styling)
 }
 
 .active{
@@ -177,7 +259,11 @@ max-height:100vh;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+<<<<<<< HEAD
     row-gap: 3.125rem;
+=======
+    row-gap: 50px;
+>>>>>>> aa05bb4 (Small section left and some little styling)
     max-height:100vh;
 }
    
@@ -185,6 +271,7 @@ max-height:100vh;
 
 /* ?Image Gallery/Post Tab */
 .postGallery{
+<<<<<<< HEAD
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: min-content;
@@ -334,3 +421,149 @@ max-height:100vh;
     padding-top: 1rem;
 }
 >>>>>>> af25f29 (Pages created but it is not complete)
+=======
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: min-content;
+    column-gap: 20px;
+    row-gap: 20px;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+/* ............................................................... */
+.postGallery::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .postGallery::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .postGallery::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .postGallery::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-purple);
+  } 
+  
+/* ............................................................... */
+
+.imgWrapper{
+    max-width: 100%;
+    position: relative;
+}
+
+
+.imgWrapper img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.imgWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 1);
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .imgWrapper:hover::before {
+    opacity: 0.6;
+  }
+
+  .imgWrapper:hover::after {
+    content: "View on Instagram";
+    position: absolute;
+    top: 50%;
+    font-size: 14px;
+    text-align: center;
+    font-weight: var(--font-weight-semibold);
+    left: 50%;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+/* ? Pricing Tab*/
+.pricingPageContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 70px;
+}
+
+/* ?Pricing Page Navbar*/
+.pricingNav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(94, 23, 235, 0.1);
+    padding: 0.5rem 0.5rem;
+    border-radius: 60px;
+    margin: auto;
+}
+
+/* ?Single Tab element */
+.tabelement{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
+
+.tabelement span{
+    color: var(--black);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold);
+  opacity: 0.45;
+  font-weight:  var(--font-weight-semibold);
+  cursor: pointer;
+}
+
+.tabelement img{
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1) opacity(0.45);
+}
+
+.activePriceTab{
+    background-color: var(--primary-purple);
+    transition: all 0.4s;
+}
+
+.activePriceTab span{
+    color: white;
+    opacity: 10;
+    cursor: pointer;
+}
+
+
+.activePriceTab img {
+    filter: brightness(0) invert(1);
+  }
+
+
+/* ?..................................................... */
+.buyPost{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+}
+>>>>>>> aa05bb4 (Small section left and some little styling)

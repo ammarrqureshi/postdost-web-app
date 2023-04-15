@@ -1,9 +1,17 @@
 import { useContext } from "react";
+<<<<<<< HEAD
 import { InfluencerContext } from "../../../../contexts/InfluencerProvider";
 import InfluencerImage from "./InfluencerImage";
 import classes from './../Influencer.module.css'; 
 import InstaIcon from './../../../../assets/InfluencerPageAssets/InstaIcon.png';
 import LocationIcon from './../../../../assets/InfluencerPageAssets/LocationInfo.png';
+=======
+import { CardContext } from "../../../../contexts/CardProvider";
+import InfluencerImage from "./InfluencerImage";
+import classes from './../Influencer.module.css'; 
+import InstaIcon from './../../../../assets/InfluencerPageAssets/InstaIcon.png';
+import LocationIcon from './../../../../assets/InfluencerPageAssets/locationInfo.png';
+>>>>>>> aa05bb4 (Small section left and some little styling)
 import Addtofavourite from "./Addtofavourite";
 import TagElements from "./TagElements";
 import Card from '../../../UI/Card';
@@ -11,10 +19,17 @@ import Button from '../../../UI/Button';
 
 
 function InfluencerCard(){
+<<<<<<< HEAD
     const ctx=useContext(InfluencerContext);
 
     return(
         <Card className={classes.influencerCard}>
+=======
+    const ctx=useContext(CardContext);
+
+    return(
+        <Card>
+>>>>>>> aa05bb4 (Small section left and some little styling)
           <InfluencerImage displayImage={ctx.profileImg}></InfluencerImage>
           <section className={classes.cardText}>
           <h1>{ctx.influencerName}</h1>
@@ -38,4 +53,8 @@ function InfluencerCard(){
          </Card>
     )}
 
+<<<<<<< HEAD
 export default InfluencerCard;
+=======
+export default InfluencerCard;
+>>>>>>> aa05bb4 (Small section left and some little styling)
