@@ -1,24 +1,51 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 // This is a test button component... use this for all buttons, do not care for css, can be adjusted later.
 const Button = styled.button`
-  /* This renders the buttons above... Edit me! */
-  display: inline-block;
-  border-radius: ${props => props.borderRadius || '3px'};
-  padding: ${props => props.Padding || '0.5rem 0' };
-  // margin: 0.5rem 1rem;
-  width: 9rem;
-  background: ${props => props.Color || 'red'};
-  color: ${props => props.textColor || 'white'};
-  border: ${props => props.border || '2px solid white'};
-  font-family:'Raleway', sans-serif;
-  font-size: ${props => props.fontSize || '16px'};
-  font-weight: ${props => props.fontWeight || 'normal'};
-  opacity: ${props => props.Opacity || '100%'}
+padding: 0.8em 1.5em;
+border: none;
+outline: none;
+width: auto;
+display: inline-block;
+          width: auto;
+background: var(--primary-purple);
+color: white;
+border-radius: .5rem;
+font-weight: var(--font-weight-semibold);
+cursor: pointer;
+font-family: 'Raleway', sans-serif;
+box-sizing: border-box;
+display:flex;
+align-items:center;
+justify-content:center;
 
-  ${props => props.$primary && css`
-    background: white;
-    color: black;
-  `}
+&:hover {
+  opacity: 0.9;
+transform   : scale(1.06,1.06) ;
+transition-duration: 350ms;
+}
+
+span {
+  font-size:22px;
+  margin-left: 10px;
+  display:flex;
+  align-items:center;
+}
+
+${props => props.$secondary && css`
+  background: var( --secondary-grey);
+  color: var(--primary-purple);
+
+`}
+${props => props.$outline && css`
+  background: transparent;
+  border: 1px solid var(--primary-purple);
+  color: var(--primary-purple);
+  &:hover {
+    opacity: 1;
+  background-color: var(--primary-purple);
+  color: white;
+}
+`}
 `
 export default Button;

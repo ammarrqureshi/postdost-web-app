@@ -2,14 +2,20 @@ import styled from "styled-components"
 
 const Card = styled.div`
 /* This renders the buttons above... Edit me! */
+box-sizing: border-box;
 display: inline-block;
 border-radius: 10px;
-padding: 0.5rem 0;
-margin: 0.5rem 1rem;
-width: 11rem;
-background: #f2f2f2;
+background-color: #ffffff;
+padding:30px 0;
 color: #0e0e0e;
-box-shadow: 10px 10px 10px rgba(0,0,0, .8);
+position: sticky;
+box-shadow: 0 8px 19px rgba(0, 0, 0, 0.15);
+display: flex;
+flex-direction: column;
+row-gap: 20px;
+align-items: center;
+justify-content: center;
+max-height:100vh;
 `
 
 export default Card;
