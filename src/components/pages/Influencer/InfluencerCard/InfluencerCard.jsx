@@ -3,7 +3,7 @@ import { InfluencerContext } from "../../../../contexts/InfluencerProvider";
 import InfluencerImage from "./InfluencerImage";
 import classes from './../Influencer.module.css'; 
 import InstaIcon from './../../../../assets/InfluencerPageAssets/InstaIcon.png';
-import LocationIcon from './../../../../assets/InfluencerPageAssets/locationInfo.png';
+import LocationIcon from './../../../../assets/InfluencerPageAssets/LocationInfo.png';
 import Addtofavourite from "./Addtofavourite";
 import TagElements from "./TagElements";
 import Card from '../../../UI/Card';
