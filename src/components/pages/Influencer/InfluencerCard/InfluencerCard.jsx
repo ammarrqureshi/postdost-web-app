@@ -14,7 +14,7 @@ function InfluencerCard(){
     const ctx=useContext(InfluencerContext);
 
     return(
-        <Card>
+        <Card className={classes.influencerCard}>
           <InfluencerImage displayImage={ctx.profileImg}></InfluencerImage>
           <section className={classes.cardText}>
           <h1>{ctx.influencerName}</h1>
