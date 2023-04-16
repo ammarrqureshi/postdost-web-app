@@ -2,13 +2,15 @@ import styled from "styled-components"
 
 const Card = styled.div`
 /* This renders the buttons above... Edit me! */
-box-sizing: border-box;
 display: inline-block;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> ac81d60 (added all basic UI components in components/UI)
+=======
+>>>>>>> 66dfee3 (updated Card.jsx in client-side-u)
 border-radius: 0.5rem;
 padding: 1rem;
 margin: 0 auto;
@@ -16,6 +18,7 @@ width: auto;
 background: white;
 color: var(--black);
 box-shadow: var(--box-shadow);
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 border-radius: 10px;
@@ -43,8 +46,11 @@ max-height:100vh;
 >>>>>>> ddcb520 (Small section left and some little styling)
 =======
 >>>>>>> d831067 (Updated changes)
+=======
+>>>>>>> 66dfee3 (updated Card.jsx in client-side-u)
 `
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 export default Card
@@ -54,3 +60,6 @@ export default Card
 =======
 export default Card;
 >>>>>>> af25f29 (Pages created but it is not complete)
+=======
+export default Card
+>>>>>>> 7359422 (updated Card.jsx in client-side-u)
