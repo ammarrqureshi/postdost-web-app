@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { createContext } from 'react';
 import img from './../assets/InfluencerPageAssets/ProfileImage.png';
 
-export const CardContext=createContext();
+export const InfluencerContext=createContext();
 
-function CardProvider(props){
+function InfluencerProvider(props){
     const cardDataObj={
         profileImg: img,
         influencerName: 'Usama Kamran',
@@ -32,10 +32,10 @@ function CardProvider(props){
 
     // const [cardData,setCardData]=useState(cardDataObj);
     return(
-        <CardContext.Provider value={cardDataObj}>
+        <InfluencerContext.Provider value={cardDataObj}>
             {props.children}
-        </CardContext.Provider>
+        </InfluencerContext.Provider>
     )
 }
 
-export default CardProvider;
+export default InfluencerProvider;

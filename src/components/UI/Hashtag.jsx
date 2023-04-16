@@ -13,20 +13,9 @@ const Hashtag = styled.button`
     text-align: center;
     transition-duration: 350ms;
     cursor: pointer;
-<<<<<<< HEAD
     &:hover{
         opacity: 0.8;
     }
-=======
-
-    &:hover{
-        opacity: 0.8;
-
-
-    }
-
-
->>>>>>> 2250c903c150b51d58750cfd1f06e1c620044c02
 `
 
 export default Hashtag;

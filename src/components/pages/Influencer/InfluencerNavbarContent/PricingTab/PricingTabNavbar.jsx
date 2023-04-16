@@ -14,21 +14,21 @@ function PricingTabNavbar(){
         <div className={`${classes.tabelement} ${activePricingTab===0 ? classes.activePriceTab : ''}`} 
         onClick={()=> setActivePricingTab(0)}>
         <TabSvg color={activePricingTab==0? 'white' : greyClr}
-         width='18px' height ='18px'></TabSvg>
+         width='1.125rem' height ='1.125rem'></TabSvg>
         <span>Buy a post</span>
         </div>
        {/* ............................................. */}
         <div className={`${classes.tabelement} ${activePricingTab==1 ? classes.activePriceTab : ''}`} 
         onClick={()=> setActivePricingTab(1)}>
         <TabSvg color={activePricingTab==1? 'white' : greyClr}
-         width='18px' height ='18px'></TabSvg>
+          width='1.125rem' height ='1.125rem'></TabSvg>
        <span>Get a subscription</span>
        </div>
        {/* ............................................... */}
       <div className={`${classes.tabelement} ${activePricingTab==2 ? classes.activePriceTab : ''}`} 
        onClick={()=> setActivePricingTab(2)}>
       <TabSvg color={activePricingTab==2? 'white' : greyClr}
-       width='18px' height ='18px'></TabSvg>
+        width='1.125rem' height ='1.125rem'></TabSvg>
       <span>New campaign</span>
       </div>
     </section>

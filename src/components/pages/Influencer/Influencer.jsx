@@ -2,17 +2,17 @@ import classes from './Influencer.module.css';
 import InfluencerCard from './InfluencerCard/InfluencerCard';
 import InfluencerNavData from './InfluencerNavbarContent/InfluencerNavData';
 import TabProvider from './../../../contexts/TabProvider';
-import CardProvider from '../../../contexts/CardProvider';
+import InfluencerProvider from '../../../contexts/InfluencerProvider';
 
 const Influencer = () => {
   return (
     <TabProvider>
-      <CardProvider>
+      <InfluencerProvider>
       <section className={classes.influencerPage}>
        <InfluencerCard> </InfluencerCard>
        <InfluencerNavData> </InfluencerNavData>
     </section>
-    </CardProvider>
+    </InfluencerProvider>
     </TabProvider>
   )
 }

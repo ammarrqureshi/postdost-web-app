@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { CardContext } from "../../../../contexts/CardProvider";
+import { InfluencerContext } from "../../../../contexts/InfluencerProvider";
 import InfluencerImage from "./InfluencerImage";
 import classes from './../Influencer.module.css'; 
 import InstaIcon from './../../../../assets/InfluencerPageAssets/InstaIcon.png';
@@ -11,7 +11,7 @@ import Button from '../../../UI/Button';
 
 
 function InfluencerCard(){
-    const ctx=useContext(CardContext);
+    const ctx=useContext(InfluencerContext);
 
     return(
         <Card>
