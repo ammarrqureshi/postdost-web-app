@@ -6,32 +6,28 @@ function valuetext(value) {
   return `${value}CC`;
 }
 
-const calculatePercentage= (value)=>{
-    ((20/100)*value)
-}
-
-
-  
 const minDistance = 5;
 
 export default function RangeSlider(props) {
 
 
-  const [value1, setValue1] = useState([props.min, props.max]);
+  const [value, setValue] = useState([props.min, props.max]);
 
-  const handleChange1 = (event, newValue, activeThumb) => {
+  const handleChange = (event, newValue, activeThumb) => {
     if (!Array.isArray(newValue)) {
       return;
     }
 
     if (activeThumb === 0) {
-      setValue1([Math.min(newValue[0], value1[1] - minDistance), value1[1]]);
+      setValue([Math.min(newValue[0], value[1] - minDistance), value[1]]);
     } else {
-      setValue1([value1[0], Math.max(newValue[1], value1[0] + minDistance)]);
+      setValue([value[0], Math.max(newValue[1], value[0] + minDistance)]);
     }
   };
 
  
+
+
   return (
 <>
 <style>
@@ -75,8 +71,8 @@ export default function RangeSlider(props) {
       max={props.max}
         getAriaLabel={() => 'Minimum distance'}
         defaultValue= {900}
-        value={value1}
-        onChange={handleChange1}
+        value={value}
+        onChange={handleChange}
         valueLabelDisplay="auto"
         getAriaValueText={valuetext}
         disableSwap
