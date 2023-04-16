@@ -1,4 +1,4 @@
-import Hashtag from '../../../UI/HashTag';
+import Hashtag from '../../../UI/Hashtag';
 import classes from './../Influencer.module.css';
 function TagElements(){
     return(
