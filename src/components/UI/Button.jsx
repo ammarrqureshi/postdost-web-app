@@ -15,8 +15,16 @@ const Button = styled.button`
   border-radius: .5rem;
   font-weight: var(--font-weight-semibold);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 
+  span{
+    font-size:22px;
+    margin-left:10px;
+  }
   &:hover {
     opacity: 0.9;
 transform   : scale(1.06,1.06) ;
@@ -46,4 +54,4 @@ transition-duration: 350ms;
   `}
  
 `
-export default Button
+export default Button;

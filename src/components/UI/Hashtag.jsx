@@ -13,14 +13,9 @@ const Hashtag = styled.button`
     text-align: center;
     transition-duration: 350ms;
     cursor: pointer;
-
     &:hover{
         opacity: 0.8;
-
-
     }
-
-
 `
 
 export default Hashtag;
