@@ -15,10 +15,14 @@ function PricingTabNavbar(){
         onClick={()=> setActivePricingTab(0)}>
         <TabSvg color={activePricingTab==0? 'white' : greyClr}
 <<<<<<< HEAD
+<<<<<<< HEAD
          width='1.125rem' height ='1.125rem'></TabSvg>
 =======
          width='18px' height ='18px'></TabSvg>
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+         width='1.125rem' height ='1.125rem'></TabSvg>
+>>>>>>> d93acb9 (Updated changes)
         <span>Buy a post</span>
         </div>
        {/* ............................................. */}
@@ -26,10 +30,14 @@ function PricingTabNavbar(){
         onClick={()=> setActivePricingTab(1)}>
         <TabSvg color={activePricingTab==1? 'white' : greyClr}
 <<<<<<< HEAD
+<<<<<<< HEAD
           width='1.125rem' height ='1.125rem'></TabSvg>
 =======
          width='18px' height ='18px'></TabSvg>
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+          width='1.125rem' height ='1.125rem'></TabSvg>
+>>>>>>> d93acb9 (Updated changes)
        <span>Get a subscription</span>
        </div>
        {/* ............................................... */}
@@ -37,10 +45,14 @@ function PricingTabNavbar(){
        onClick={()=> setActivePricingTab(2)}>
       <TabSvg color={activePricingTab==2? 'white' : greyClr}
 <<<<<<< HEAD
+<<<<<<< HEAD
         width='1.125rem' height ='1.125rem'></TabSvg>
 =======
        width='18px' height ='18px'></TabSvg>
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+        width='1.125rem' height ='1.125rem'></TabSvg>
+>>>>>>> d93acb9 (Updated changes)
       <span>New campaign</span>
       </div>
     </section>

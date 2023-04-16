@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client'
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import './index.css';
 import App from './App';
 =======
@@ -15,6 +16,8 @@ import './index.css';
 =======
 =======
 >>>>>>> af25f29 (Pages created but it is not complete)
+=======
+>>>>>>> d93acb9 (Updated changes)
 =======
 >>>>>>> ac81d60 (added all basic UI components in components/UI)
 >>>>>>> 6c07fd0 (added all basic UI components in components/UI)
@@ -38,14 +41,25 @@ import './index.css'
 import App from './App';
 import './index.css';
 >>>>>>> 571af8b (Pages created but it is not complete)
+<<<<<<< HEAD
 >>>>>>> af25f29 (Pages created but it is not complete)
+=======
+=======
+import './index.css';
+import App from './App';
+>>>>>>> d831067 (Updated changes)
+>>>>>>> d93acb9 (Updated changes)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
 <<<<<<< HEAD
+<<<<<<< HEAD
   </React.StrictMode>
 =======
   </React.StrictMode>,
 >>>>>>> dc05564 (Explore Page)
+=======
+  </React.StrictMode>
+>>>>>>> d93acb9 (Updated changes)
 )

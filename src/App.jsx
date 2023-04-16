@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import './App.css'
 import Influencer from './components/pages/Influencer/Influencer';
 
@@ -16,6 +17,8 @@ function App() {
 >>>>>>> 08c1caf (first commit after rebase)
 =======
 >>>>>>> af25f29 (Pages created but it is not complete)
+=======
+>>>>>>> d93acb9 (Updated changes)
 import Explore from './components/pages/Explore/Explore';
 import ExploreProvider from './contexts/ExploreContext';
 import SignUp from './components/pages/SignUp/SignUp';
@@ -114,4 +117,19 @@ function App() {
 
 export default App;
 >>>>>>> 571af8b (Pages created but it is not complete)
+<<<<<<< HEAD
 >>>>>>> af25f29 (Pages created but it is not complete)
+=======
+=======
+import './App.css'
+import Influencer from './components/pages/Influencer/Influencer';
+
+function App() {
+  return (
+    <Influencer></Influencer>
+  )
+  }
+  
+  export default App;
+>>>>>>> d831067 (Updated changes)
+>>>>>>> d93acb9 (Updated changes)

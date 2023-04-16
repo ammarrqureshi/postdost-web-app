@@ -15,18 +15,24 @@ const Hashtag = styled.button`
     cursor: pointer;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     &:hover{
         opacity: 0.8;
     }
 =======
 =======
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+>>>>>>> d93acb9 (Updated changes)
 
+=======
+>>>>>>> d831067 (Updated changes)
     &:hover{
         opacity: 0.8;
 
 
     }
+<<<<<<< HEAD
 
 
 <<<<<<< HEAD
@@ -37,7 +43,12 @@ const Hashtag = styled.button`
         opacity: 0.8;
     }
 >>>>>>> ddcb520 (Small section left and some little styling)
+<<<<<<< HEAD
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+=======
+>>>>>>> d831067 (Updated changes)
+>>>>>>> d93acb9 (Updated changes)
 `
 
 export default Hashtag;

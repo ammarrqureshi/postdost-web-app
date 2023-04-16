@@ -8,8 +8,12 @@
 =======
       max-width: 90vw;
       margin-left: auto;
+<<<<<<< HEAD
       padding: 40px 0;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+      padding: 2.5rem 0;
+>>>>>>> d93acb9 (Updated changes)
       display: grid;
       grid-template-columns: 1fr 3fr;
       column-gap: 2.5rem;
@@ -47,10 +51,14 @@ max-height:100vh;
     align-items: center;
     justify-content: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
     row-gap: 0.625rem;
 =======
     row-gap: 10px;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+    row-gap: 0.625rem;
+>>>>>>> d93acb9 (Updated changes)
 
 }
 
@@ -60,10 +68,14 @@ max-height:100vh;
 
 .cardText h1{
 <<<<<<< HEAD
+<<<<<<< HEAD
     font-size: 1.375rem;
 =======
     font-size: 22px;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+    font-size: 1.375rem;
+>>>>>>> d93acb9 (Updated changes)
     /* font-weight: bold; */
     font-weight: var(--font-weight-bold);
     color: var(--black);
@@ -71,10 +83,14 @@ max-height:100vh;
 
 .cardText h2{
 <<<<<<< HEAD
+<<<<<<< HEAD
     font-size: 0.875rem;
 =======
     font-size: 14px;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+    font-size: 0.875rem;
+>>>>>>> d93acb9 (Updated changes)
     color: var(--black);
     opacity: 0.45;
     font-weight: var(--font-weight-semibold);
@@ -82,10 +98,14 @@ max-height:100vh;
 
 .cardText h3{
 <<<<<<< HEAD
+<<<<<<< HEAD
     font-size: 0.875rem;
 =======
     font-size: 14px;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+    font-size: 0.875rem;
+>>>>>>> d93acb9 (Updated changes)
     color: var(--black);
     opacity: 0.45;
     font-weight: var(--font-weight-semibold);
@@ -95,22 +115,29 @@ max-height:100vh;
 .profileimg img{
     max-width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d93acb9 (Updated changes)
     width: 7.5rem;
     height: 7.5rem;
     border-radius: 6.25rem;
     border:  0.1875rem solid var(--black);
+<<<<<<< HEAD
 =======
     width: 120px;
     height: 120px;
     border-radius: 100px;
     border: 3px solid var(--black);
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+>>>>>>> d93acb9 (Updated changes)
 }
 
 /* ?Add to favourite Component*/
 .addtoFavourite{
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
 <<<<<<< HEAD
     column-gap: 0.625rem;
     align-items: center;
@@ -122,14 +149,21 @@ max-height:100vh;
     width: 1.375rem;
 =======
     column-gap: 10px;
+=======
+    column-gap: 0.625rem;
+>>>>>>> d93acb9 (Updated changes)
     align-items: center;
     justify-content: center;
-    padding: 15px 0;
+    padding: 0.9375rem 0;
 }
 
 .addtoFavourite img{
+<<<<<<< HEAD
     width: 22px;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+    width: 1.375rem;
+>>>>>>> d93acb9 (Updated changes)
     height: 100%;
 }
 /* ?Social Media and Location */
@@ -137,14 +171,19 @@ max-height:100vh;
     display: flex;
     flex-direction: row;
 <<<<<<< HEAD
+<<<<<<< HEAD
     column-gap: 0.9375rem;
 =======
     column-gap: 15px;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+    column-gap: 0.9375rem;
+>>>>>>> d93acb9 (Updated changes)
 }
 
 .instaInfo img{
     max-width: 100%;
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 0.875rem;
     height: 0.875rem;
@@ -160,6 +199,14 @@ max-height:100vh;
 .instaInfo label{
     font-size: 12px;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+    width: 0.875rem;
+    height: 0.875rem;
+}
+
+.instaInfo label{
+    font-size: 0.75rem;
+>>>>>>> d93acb9 (Updated changes)
     font-weight: var(--font-weight-bold);
     color: var(--black);
     opacity: 0.45;
@@ -169,14 +216,19 @@ max-height:100vh;
     display: flex;
     flex-direction: row;
 <<<<<<< HEAD
+<<<<<<< HEAD
     column-gap: 0.9375rem;
 =======
     column-gap: 15px;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+    column-gap: 0.9375rem;
+>>>>>>> d93acb9 (Updated changes)
 }
 
 .locationInfo img{
     max-width: 100%;
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 1.125rem;
     height: 1.125rem;
@@ -192,6 +244,14 @@ max-height:100vh;
 .locationInfo label{
     font-size: 12px;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+    width: 1.125rem;
+    height: 1.125rem;
+}
+
+.locationInfo label{
+    font-size: 0.75rem;
+>>>>>>> d93acb9 (Updated changes)
     font-weight: var(--font-weight-bold);
     color: var(--black);
     opacity: 0.45;
@@ -202,12 +262,17 @@ max-height:100vh;
     display: flex;
     flex-direction: column;
 <<<<<<< HEAD
+<<<<<<< HEAD
     row-gap: 1.25rem;
     padding: 1.25rem 0;
 =======
     row-gap: 20px;
     padding: 20px 0;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+    row-gap: 1.25rem;
+    padding: 1.25rem 0;
+>>>>>>> d93acb9 (Updated changes)
 }
 
 /* ?Tag Component */
@@ -217,10 +282,14 @@ max-height:100vh;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr;
 <<<<<<< HEAD
+<<<<<<< HEAD
    gap: 0.625rem;
 =======
    gap: 10px;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+   gap: 0.625rem;
+>>>>>>> d93acb9 (Updated changes)
 }
 
 /* .................................................................................. */
@@ -239,10 +308,14 @@ max-height:100vh;
     align-items: center;
     justify-content: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
     column-gap: 3.75rem;
 =======
     column-gap: 60px;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+    column-gap: 3.75rem;
+>>>>>>> d93acb9 (Updated changes)
 }
 
 .active{
@@ -260,10 +333,14 @@ max-height:100vh;
     align-items: flex-start;
     justify-content: flex-start;
 <<<<<<< HEAD
+<<<<<<< HEAD
     row-gap: 3.125rem;
 =======
     row-gap: 50px;
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+    row-gap: 3.125rem;
+>>>>>>> d93acb9 (Updated changes)
     max-height:100vh;
 }
    
@@ -425,26 +502,26 @@ max-height:100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: min-content;
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 1.25rem;
+    row-gap: 1.25rem;
     overflow-y: scroll;
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 
 /* ............................................................... */
 .postGallery::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 0.5rem;
+    height: 0.5rem;
   }
   
   .postGallery::-webkit-scrollbar-track {
     background: #f1f1f1;
-    border-radius: 10px;
+    border-radius: 0.625rem;
   }
   
   .postGallery::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 0.625rem;
   }
   
   .postGallery::-webkit-scrollbar-thumb:hover {
@@ -464,7 +541,7 @@ max-height:100vh;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .imgWrapper::before {
@@ -477,7 +554,7 @@ max-height:100vh;
     opacity: 0;
     background-color: rgba(0, 0, 0, 1);
     transition: opacity 0.3s ease;
-    border-radius: 8px;
+    border-radius: 0.5rem;
   }
   
   .imgWrapper:hover::before {
@@ -488,7 +565,7 @@ max-height:100vh;
     content: "View on Instagram";
     position: absolute;
     top: 50%;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: center;
     font-weight: var(--font-weight-semibold);
     left: 50%;
@@ -503,7 +580,7 @@ max-height:100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 70px;
+    row-gap: 4.375rem;
 }
 
 /* ?Pricing Page Navbar*/
@@ -512,7 +589,7 @@ max-height:100vh;
     flex-direction: row;
     background-color: rgba(94, 23, 235, 0.1);
     padding: 0.5rem 0.5rem;
-    border-radius: 60px;
+    border-radius: 3.75rem;
     margin: auto;
 }
 
@@ -520,27 +597,20 @@ max-height:100vh;
 .tabelement{
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 1.25rem;
     align-items: center;
     justify-content: center;
     padding: 1rem 2rem;
-    border-radius: 50px;
+    border-radius: 3.125rem;
 }
 
 .tabelement span{
     color: var(--black);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: var(--font-weight-semibold);
   opacity: 0.45;
-  font-weight:  var(--font-weight-semibold);
   cursor: pointer;
-}
-
-.tabelement img{
-    width: 18px;
-    height: 18px;
-    filter: brightness(0) invert(1) opacity(0.45);
 }
 
 .activePriceTab{
@@ -564,6 +634,11 @@ max-height:100vh;
 .buyPost{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+<<<<<<< HEAD
     column-gap: 20px;
 }
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+    column-gap: 1.25rem;
+}
+>>>>>>> d93acb9 (Updated changes)

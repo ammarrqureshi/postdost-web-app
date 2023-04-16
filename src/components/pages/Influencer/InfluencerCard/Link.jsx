@@ -6,10 +6,14 @@ const Link = styled.a`
   text-decoration: none;
   cursor: pointer;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: ${props => props.fontSize || '1rem'};
 =======
   font-size: ${props => props.fontSize || '16px'};
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+  font-size: ${props => props.fontSize || '1rem'};
+>>>>>>> d93acb9 (Updated changes)
   cursor: pointer;
   opacity: ${props => props.opacity || '0.40'};
   font-weight: ${props => props.fontWeight || 'var(--font-weight-bold)'};

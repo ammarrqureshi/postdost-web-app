@@ -9,6 +9,9 @@ import styled, { css } from 'styled-components'
 // This is a test button component... use this for all buttons, do not care for css, can be adjusted later.
 const Button = styled.button`
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d831067 (Updated changes)
   /* This renders the buttons above... Edit me! */
   
   padding: 0.8em 1.5em;
@@ -17,12 +20,16 @@ const Button = styled.button`
   width: auto;
   display: inline-block;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d831067 (Updated changes)
             width: auto;
   background: var(--primary-purple);
   color: white;
   border-radius: .5rem;
   font-weight: var(--font-weight-semibold);
   cursor: pointer;
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: flex;
   align-items: center;
@@ -35,6 +42,8 @@ const Button = styled.button`
     margin-left:10px;
   }
 =======
+=======
+>>>>>>> d93acb9 (Updated changes)
   box-sizing: border-box;
 =======
   border-radius: ${props => props.borderRadius || '3px'};
@@ -50,7 +59,22 @@ const Button = styled.button`
   opacity: ${props => props.Opacity || '100%'}
 >>>>>>> 571af8b (Pages created but it is not complete)
 
+<<<<<<< HEAD
 >>>>>>> dc05564 (Explore Page)
+=======
+=======
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+
+  span{
+    font-size:22px;
+    margin-left:10px;
+  }
+>>>>>>> d831067 (Updated changes)
+>>>>>>> d93acb9 (Updated changes)
   &:hover {
     opacity: 0.9;
 transform   : scale(1.06,1.06) ;
@@ -79,6 +103,7 @@ transition-duration: 350ms;
   }
   `}
  
+<<<<<<< HEAD
 `
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -201,6 +226,8 @@ ${props => props.$outline && css`
 }
 `}
 >>>>>>> ddcb520 (Small section left and some little styling)
+=======
+>>>>>>> d831067 (Updated changes)
 `
 <<<<<<< HEAD
 >>>>>>> 735b7fd (directory structure initial commit)

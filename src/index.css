@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap");
   :root {
     font-size: 16px;
@@ -44,6 +45,8 @@
 >>>>>>> af25f29 (Pages created but it is not complete)
 =======
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+>>>>>>> d93acb9 (Updated changes)
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap');
 @tailwind base;
 @tailwind components;
@@ -210,9 +213,11 @@ html{
 >>>>>>> af25f29 (Pages created but it is not complete)
 =======
 =======
+=======
+>>>>>>> d831067 (Updated changes)
   @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap");
   :root {
-      font-size: 16px;
+    font-size: 16px;
     margin: 0 auto;
     font-family: "Raleway", sans-serif;
   
@@ -231,5 +236,12 @@ html{
   html{
       font-size: 16px;
   }
+<<<<<<< HEAD
 >>>>>>> ddcb520 (Small section left and some little styling)
+<<<<<<< HEAD
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+=======
+
+>>>>>>> d831067 (Updated changes)
+>>>>>>> d93acb9 (Updated changes)

@@ -18,12 +18,17 @@ import classes from './Influencer.module.css';
 import InfluencerCard from './InfluencerCard/InfluencerCard';
 import InfluencerNavData from './InfluencerNavbarContent/InfluencerNavData';
 import TabProvider from './../../../contexts/TabProvider';
+<<<<<<< HEAD
 import CardProvider from '../../../contexts/CardProvider';
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+import InfluencerProvider from '../../../contexts/InfluencerProvider';
+>>>>>>> d93acb9 (Updated changes)
 
 const Influencer = () => {
   return (
     <TabProvider>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <InfluencerProvider>
@@ -37,11 +42,14 @@ const Influencer = () => {
 =======
       <CardProvider>
 >>>>>>> aa05bb4 (Small section left and some little styling)
+=======
+      <InfluencerProvider>
+>>>>>>> d93acb9 (Updated changes)
       <section className={classes.influencerPage}>
        <InfluencerCard> </InfluencerCard>
        <InfluencerNavData> </InfluencerNavData>
     </section>
-    </CardProvider>
+    </InfluencerProvider>
     </TabProvider>
 <<<<<<< HEAD
    
