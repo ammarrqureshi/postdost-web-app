@@ -53,13 +53,19 @@ max-height:100vh;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d064430 (Explore Page)
 export default Card
 =======
 export default Card
 >>>>>>> dc05564 (Explore Page)
+<<<<<<< HEAD
 =======
 export default Card;
 >>>>>>> af25f29 (Pages created but it is not complete)
 =======
 export default Card
 >>>>>>> 7359422 (updated Card.jsx in client-side-u)
+=======
+>>>>>>> d064430 (Explore Page)

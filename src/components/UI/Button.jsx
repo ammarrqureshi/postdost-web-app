@@ -31,6 +31,7 @@ const Button = styled.button`
   cursor: pointer;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,6 +45,8 @@ const Button = styled.button`
 =======
 =======
 >>>>>>> d93acb9 (Updated changes)
+=======
+>>>>>>> d064430 (Explore Page)
   box-sizing: border-box;
 =======
   border-radius: ${props => props.borderRadius || '3px'};
@@ -63,6 +66,8 @@ const Button = styled.button`
 >>>>>>> dc05564 (Explore Page)
 =======
 =======
+=======
+>>>>>>> 4dcc05c (Explore Page)
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,8 +78,18 @@ const Button = styled.button`
     font-size:22px;
     margin-left:10px;
   }
+<<<<<<< HEAD
 >>>>>>> d831067 (Updated changes)
+<<<<<<< HEAD
 >>>>>>> d93acb9 (Updated changes)
+=======
+=======
+=======
+  box-sizing: border-box;
+
+>>>>>>> dc05564 (Explore Page)
+>>>>>>> 4dcc05c (Explore Page)
+>>>>>>> d064430 (Explore Page)
   &:hover {
     opacity: 0.9;
 transform   : scale(1.06,1.06) ;
@@ -107,11 +122,14 @@ transition-duration: 350ms;
 `
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 export default Button;
 =======
 export default Button
 >>>>>>> dc05564 (Explore Page)
 =======
+=======
+>>>>>>> d064430 (Explore Page)
 =======
 import React from 'react'
 =======
@@ -238,4 +256,14 @@ export default Button
 =======
 export default Button;
 >>>>>>> 571af8b (Pages created but it is not complete)
+<<<<<<< HEAD
 >>>>>>> af25f29 (Pages created but it is not complete)
+=======
+=======
+<<<<<<< HEAD
+export default Button;
+=======
+export default Button
+>>>>>>> dc05564 (Explore Page)
+>>>>>>> 4dcc05c (Explore Page)
+>>>>>>> d064430 (Explore Page)

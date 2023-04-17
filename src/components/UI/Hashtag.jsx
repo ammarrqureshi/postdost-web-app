@@ -16,6 +16,7 @@ const Hashtag = styled.button`
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     &:hover{
         opacity: 0.8;
     }
@@ -24,6 +25,8 @@ const Hashtag = styled.button`
 >>>>>>> aa05bb4 (Small section left and some little styling)
 =======
 >>>>>>> d93acb9 (Updated changes)
+=======
+>>>>>>> d064430 (Explore Page)
 
 =======
 >>>>>>> d831067 (Updated changes)
@@ -48,7 +51,25 @@ const Hashtag = styled.button`
 =======
 =======
 >>>>>>> d831067 (Updated changes)
+<<<<<<< HEAD
 >>>>>>> d93acb9 (Updated changes)
+=======
+=======
+    &:hover{
+        opacity: 0.8;
+    }
+=======
+
+    &:hover{
+        opacity: 0.8;
+
+
+    }
+
+
+>>>>>>> dc05564 (Explore Page)
+>>>>>>> 4dcc05c (Explore Page)
+>>>>>>> d064430 (Explore Page)
 `
 
 export default Hashtag;

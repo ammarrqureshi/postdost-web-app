@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap");
   :root {
     font-size: 16px;
@@ -47,6 +48,8 @@
 >>>>>>> aa05bb4 (Small section left and some little styling)
 =======
 >>>>>>> d93acb9 (Updated changes)
+=======
+>>>>>>> d064430 (Explore Page)
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap');
 @tailwind base;
 @tailwind components;
@@ -215,6 +218,8 @@ html{
 =======
 =======
 >>>>>>> d831067 (Updated changes)
+=======
+>>>>>>> 4dcc05c (Explore Page)
   @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap");
   :root {
     font-size: 16px;
@@ -260,10 +265,60 @@ html{
   
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7c75e1d (updated index.css in client-side-u)
 <<<<<<< HEAD
 >>>>>>> 9b7b3ec (updated index.css in client-side-u)
 =======
 =======
 >>>>>>> 0467f6b (updated index.css with page-heading class)
+<<<<<<< HEAD
 >>>>>>> b436be2 (updated index.css with page-heading class)
+=======
+=======
+=======
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-size: 16px;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+
+  /* CSS Variables */
+  --primary-purple: #5e17eb;
+  --secondary-grey: rgba(216, 197, 255, 0.7);
+  --black: #0e0e0e;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  line-height: 100%;
+
+  --box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  font-size: 16px;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  height: 1px;
+}
+/* .MuiSlider-rail {
+  color: #ababab;
+}
+.MuiSlider-thumb,
+.MuiSlider-track,
+.Mui-active {
+  color: #5e17eb;
+} */
+>>>>>>> dc05564 (Explore Page)
+>>>>>>> 4dcc05c (Explore Page)
+>>>>>>> d064430 (Explore Page)

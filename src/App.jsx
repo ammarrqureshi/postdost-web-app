@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import './App.css'
 import Influencer from './components/pages/Influencer/Influencer';
 
@@ -19,6 +20,8 @@ function App() {
 >>>>>>> af25f29 (Pages created but it is not complete)
 =======
 >>>>>>> d93acb9 (Updated changes)
+=======
+>>>>>>> d064430 (Explore Page)
 import Explore from './components/pages/Explore/Explore';
 import ExploreProvider from './contexts/ExploreContext';
 import SignUp from './components/pages/SignUp/SignUp';
@@ -121,6 +124,8 @@ export default App;
 >>>>>>> af25f29 (Pages created but it is not complete)
 =======
 =======
+=======
+>>>>>>> 4dcc05c (Explore Page)
 import './App.css'
 import Influencer from './components/pages/Influencer/Influencer';
 
@@ -131,5 +136,31 @@ function App() {
   }
   
   export default App;
+<<<<<<< HEAD
 >>>>>>> d831067 (Updated changes)
+<<<<<<< HEAD
 >>>>>>> d93acb9 (Updated changes)
+=======
+=======
+=======
+import Explore from './components/pages/Explore/Explore';
+import ExploreProvider from './contexts/ExploreContext';
+import SignUp from './components/pages/SignUp/SignUp';
+import LogIn from './components/pages/LogIn/LogIn';
+function App() {
+  return (
+    <>
+      <div className="App">
+        {/* <ExploreProvider>
+          <Explore />
+        </ExploreProvider> */}
+        {/* <SignUp /> */}
+        <LogIn/>
+      </div>
+    </>
+  );
+}
+export default App;
+>>>>>>> dc05564 (Explore Page)
+>>>>>>> 4dcc05c (Explore Page)
+>>>>>>> d064430 (Explore Page)
