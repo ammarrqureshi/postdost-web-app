@@ -12,4 +12,8 @@ color: var(--black);
 box-shadow: var(--box-shadow);
 `
 
+<<<<<<< HEAD
 export default Card
+=======
+export default Card
+>>>>>>> dc05564 (Explore Page)

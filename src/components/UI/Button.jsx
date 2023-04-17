@@ -15,6 +15,7 @@ const Button = styled.button`
   border-radius: .5rem;
   font-weight: var(--font-weight-semibold);
   cursor: pointer;
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,6 +26,10 @@ const Button = styled.button`
     font-size:22px;
     margin-left:10px;
   }
+=======
+  box-sizing: border-box;
+
+>>>>>>> dc05564 (Explore Page)
   &:hover {
     opacity: 0.9;
 transform   : scale(1.06,1.06) ;
@@ -54,4 +59,8 @@ transition-duration: 350ms;
   `}
  
 `
+<<<<<<< HEAD
 export default Button;
+=======
+export default Button
+>>>>>>> dc05564 (Explore Page)

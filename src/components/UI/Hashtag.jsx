@@ -13,9 +13,20 @@ const Hashtag = styled.button`
     text-align: center;
     transition-duration: 350ms;
     cursor: pointer;
+<<<<<<< HEAD
     &:hover{
         opacity: 0.8;
     }
+=======
+
+    &:hover{
+        opacity: 0.8;
+
+
+    }
+
+
+>>>>>>> dc05564 (Explore Page)
 `
 
 export default Hashtag;
