@@ -11,6 +11,7 @@ function InfluencerProvider(props){
         username: 'usama1232',
         profession: 'Marketer',
         initialPrice: '30',
+        storyPrice: '10',
         followers: '500000',
         city: 'Gujar Khan',
         country: 'Pakistan'
