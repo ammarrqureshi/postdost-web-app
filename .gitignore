@@ -11,7 +11,11 @@ node_modules
 dist
 dist-ssr
 *.local
+<<<<<<< HEAD
 .env
+=======
+
+>>>>>>> 24d1d62 (created react project)
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
