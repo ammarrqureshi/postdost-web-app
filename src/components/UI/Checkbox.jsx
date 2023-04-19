@@ -1,7 +1,20 @@
-import { useState } from "react";
-const Checkbox = ({ label, checked, ...props }) => {
+import { useState } from 'react';
+const Checkbox = (props) => {
+  //value or setValue are useState values!
+  const { label, checked, id, name, value, setValue } = props;
   const defaultChecked = checked ? checked : false;
   const [isChecked, setIsChecked] = useState(defaultChecked);
+  const handleChange = (event) => {
+    setIsChecked((prev) => !prev);
+    const { value, checked } = event.target;
+    if (checked) {
+      setValue((pre) => [...pre, value]);
+    } else {
+      setValue((pre) => {
+        return [...pre.filter((skill) => skill !== value)];
+      });
+    }
+  };
   return (
     <>
       <style>
@@ -51,9 +64,12 @@ const Checkbox = ({ label, checked, ...props }) => {
           <input
             type="checkbox"
             checked={isChecked}
-            className={isChecked ? "checked" : ""}
-            onChange={() => setIsChecked((prev) => !prev)}
-            {...props}
+            className={isChecked ? 'checked' : ''}
+            onChange={handleChange}
+            id={id}
+            name={name}
+            value={value}
+            // {...props}
           />
           <span>{label}</span>
         </label>

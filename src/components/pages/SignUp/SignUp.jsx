@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { SignUpContext } from '../../../contexts/SignUpContext';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import { FaGoogle } from 'react-icons/fa';
@@ -113,7 +114,12 @@ const SignUp = () => {
               />
               <Button type="submit">Create Account</Button>
             </form>
-            <p className="text-center">Already have an account? Sign in</p>
+            <p className="text-center">
+              Already have an account?{' '}
+              <Link to="/login">
+                <span className="font-bold">LogIn</span>
+              </Link>
+            </p>
             <div className="text-center">
               <div className="flex justify-center items-center gap-2">
                 <hr className="h-[2px] bg-lightGrey w-[9rem]" />

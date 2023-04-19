@@ -8,13 +8,13 @@ const Influencer = () => {
   return (
     <TabProvider>
       <InfluencerProvider>
-      <section className={classes.influencerPage}>
-       <InfluencerCard> </InfluencerCard>
-       <InfluencerNavData> </InfluencerNavData>
-    </section>
-    </InfluencerProvider>
+        <section className={classes.influencerPage}>
+          <InfluencerCard> </InfluencerCard>
+          <InfluencerNavData> </InfluencerNavData>
+        </section>
+      </InfluencerProvider>
     </TabProvider>
-  )
-}
+  );
+};
 
 export default Influencer;

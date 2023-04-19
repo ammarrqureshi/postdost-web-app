@@ -1,35 +1,19 @@
-import { useState } from 'react';
 import Slider from '@mui/material/Slider';
 
-// function valuetext(value) {
-//   return `${value}`;
-// }
+function valueLabelFormat(value) {
+  return `${value}K`;
+}
+const marks = [
+  { value: 0, label: '0' },
+  { value: 450, label: '450' },
+];
 
-const minDistance = 5;
-
-export default function RangeSlider(props) {
+export default function Sliderr(props) {
   //value or setValue are from useState
-  const { min, max, value, setValue, formatSymbol } = props;
-  function valueLabelFormat(value) {
-    if (value >= 1000000) {
-      return `${formatSymbol}` + (value / 1000000).toFixed(1) + 'M';
-    } else if (value >= 1000) {
-      return `${formatSymbol}` + (value / 1000).toFixed(1) + ' K';
-    } else {
-      return `${formatSymbol}` + value;
-    }
-  }
-  const handleChange = (event, newValue, activeThumb) => {
-    if (!Array.isArray(newValue)) {
-      return;
-    }
-    if (activeThumb === 0) {
-      setValue([Math.min(newValue[0], value[1] - minDistance), value[1]]);
-    } else {
-      setValue([value[0], Math.max(newValue[1], value[0] + minDistance)]);
-    }
+  const { min, max, value, setValue } = props;
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
   };
-
   return (
     <>
       <style>
@@ -68,13 +52,12 @@ export default function RangeSlider(props) {
         min={min}
         max={max}
         getAriaLabel={() => 'Minimum distance'}
-        defaultValue={900}
         value={value}
         onChange={handleChange}
         valueLabelDisplay="auto"
+        marks={marks}
         // getAriaValueText={valuetext}
         valueLabelFormat={valueLabelFormat}
-        disableSwap
       />
     </>
   );
