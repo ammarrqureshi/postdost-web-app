@@ -50,9 +50,9 @@ const Explore = () => {
 
   return (
     <>
-      <section className="pt-24 pl-[7rem] relative max-w-[90%]">
+      <section className="pt-16 pl-[7rem] relative max-w-[89%]">
         <TopLines right="-right-36" />
-        <div className="flex flex-row justify-between max-w-full">
+        <div className="flex flex-row justify-between max-w-full mb-10">
           <h1 className="font-bold text-[2.5rem] leading-10">Explore</h1>
           <div className="flex flex-row">
             <div className="relative">
@@ -81,12 +81,12 @@ const Explore = () => {
         </div>
 
         {/* Influencers */}
-        <div className="flex flex-row flex-wrap gap-10 mt-8 relative">
+        <div className="flex flex-row flex-wrap gap-10 relative">
           <>
             <Filter />
             {filteredData.length !== 0 ? (
               filteredData.map((person, index) => (
-                <div key={person.id} className="pt-6">
+                <div key={person.id} >
                   <Influencer {...person} />
                 </div>
               ))

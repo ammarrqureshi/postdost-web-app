@@ -4,9 +4,11 @@ export default {
   theme: {
     colors: {
       lightGrey: 'rgba(216, 197, 255, 0.7)',
-      grey:'#94989B',
+      grey: '#94989B',
       violet: '#5e17eb',
       black: '#0e0e0e',
+      green: '#29A614',
+      red: '#D81F1F',
     },
     extend: {
       boxShadow: {

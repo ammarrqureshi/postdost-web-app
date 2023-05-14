@@ -1,19 +1,59 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import * as yup from 'yup';
+import axios from 'axios';
+import { useFormik } from 'formik';
+import Cookies from 'js-cookie';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import { FaGoogle } from 'react-icons/fa';
 import logo from '../../../assets/logo.png';
-import TopLines from '../../UI/TopLines';
 import TextField from '../../UI/TextField';
 import Button from '../../UI/Button';
+
 const LogIn = () => {
+  const navigate = useNavigate();
+  const onSubmit = async (values, actions) => {
+    const { email, password } = values;
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    axios
+      .post('http://localhost:8000/user/login', { email, password })
+      .then((response) => {
+        Cookies.set('token', response.data.token, { expires: 7 });
+        response.status === 200 && navigate('/');
+      })
+      .catch((error) => console.log(error));
+  };
+
+  const initialValues = {
+    email: '',
+    password: '',
+  };
+  const loginSchema = yup.object().shape({
+    email: yup
+      .string()
+      .email('Please enter a valid email')
+      .required('Required'),
+    password: yup.string().required('Required'),
+  });
+  const {
+    values,
+    isSubmitting,
+    errors,
+    touched,
+    handleChange,
+    handleBlur,
+    handleSubmit,
+  } = useFormik({
+    initialValues,
+    validationSchema: loginSchema,
+    onSubmit,
+  });
   const [passwordVisibility, setPasswordVisibility] = useState(false);
   const togglePasswordVisibility = () => {
     setPasswordVisibility((visible) => !visible);
   };
   return (
     <section className="relative m-auto max-w-screen max-h-screen overflow-hidden ">
-      <TopLines flip="-scale-x-100" />
       <div className="flex">
         {/* LeftSide */}
         <div className="w-[50%] h-screen pt-10 flex flex-col items-center justify-center">
@@ -27,32 +67,55 @@ const LogIn = () => {
             </p>
           </div>
           <div className="grid gap-6 pt-16 w-80 text-sm">
-            <TextField
-              placeholder="Enter Your Gmail"
-              type="email"
-              id="gmail"
-              name="gmail"
-            />
-            <div className="relative">
+            <form onSubmit={handleSubmit} autoComplete="off">
+              {errors.email && touched.email && (
+                <p className="text-red">{errors.email}</p>
+              )}
               <TextField
-                placeholder="Enter Your Password"
-                type={passwordVisibility ? 'text' : 'password'}
-                style={{ width: '25rem' }}
-                id="password"
-                name="password"
+                placeholder="Enter Your Gmail"
+                type="email"
+                id="email"
+                name="email"
+                value={values.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                isError={errors.email && touched.email}
+                style={{ marginBottom: '1rem', width: '25rem' }}
               />
-              <div
-                onClick={togglePasswordVisibility}
-                className="absolute right-5 top-3 text-grey text-xl"
-              >
-                {passwordVisibility ? <AiFillEye /> : <AiFillEyeInvisible />}
+              {errors.password && touched.password && (
+                <p className="text-red">{errors.password}</p>
+              )}
+              <div className="relative">
+                <TextField
+                  placeholder="Enter Your Password"
+                  type={passwordVisibility ? 'text' : 'password'}
+                  style={{ width: '25rem' }}
+                  id="password"
+                  name="password"
+                  value={values.password}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  isError={errors.password && touched.password}
+                />
+                <div
+                  onClick={togglePasswordVisibility}
+                  className="absolute right-5 top-3 text-grey text-xl"
+                >
+                  {passwordVisibility ? <AiFillEye /> : <AiFillEyeInvisible />}
+                </div>
               </div>
-            </div>
 
-            <p className="font-bold text-black text-right">
-              <Link to="/forgotpassword">Forgot Passowrd?</Link>{' '}
-            </p>
-            <Button>LogIn</Button>
+              <p className="font-bold text-black text-right">
+                <Link to="/forgotpassword">Forgot Passowrd?</Link>{' '}
+              </p>
+              <Button
+                type="submit"
+                style={{ width: '25rem', marginTop: '1rem' }}
+                disabled={isSubmitting}
+              >
+                LogIn
+              </Button>
+            </form>
             <p className="text-center">
               Dont' have account?
               <span className="font-bold text-black text">

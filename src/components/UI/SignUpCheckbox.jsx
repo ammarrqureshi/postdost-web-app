@@ -1,20 +1,7 @@
 import { useState } from 'react';
 const Checkbox = (props) => {
   //value or setValue are useState values!
-  const { label, checked, id, name, value, setValue } = props;
-  const defaultChecked = checked ? checked : false;
-  const [isChecked, setIsChecked] = useState(defaultChecked);
-  const handleChange = (event) => {
-    setIsChecked((prev) => !prev);
-    const { value, checked } = event.target;
-    if (checked) {
-      setValue((pre) => [...pre, value]);
-    } else {
-      setValue((pre) => {
-        return [...pre.filter((skill) => skill !== value)];
-      });
-    }
-  };
+  const { label, id, name, value, onChange, onBlur, isError } = props;
   return (
     <>
       <style>
@@ -49,11 +36,13 @@ const Checkbox = (props) => {
            
           }
           
-          input.checked {
+          input:checked {
             background-color: var(--primary-purple);
             position: relative;
           }
-          
+          input.redBorder{
+            border:1px solid #D81F1F;
+          }  
           .checkbox-wrapper input[type="checkbox"]:focus {
             box-shadow: var(--box-shadow);
           }`}
@@ -63,11 +52,12 @@ const Checkbox = (props) => {
         <label>
           <input
             type="checkbox"
-            className={isChecked ? 'checked' : ''}
-            onChange={handleChange}
             id={id}
             name={name}
             value={value}
+            onChange={onChange}
+            onBlur={onBlur}
+            className={isError ? 'redBorder' : ''}
             // {...props}
           />
           <span>{label}</span>

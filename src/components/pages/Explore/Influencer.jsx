@@ -14,7 +14,7 @@ const Influencer = ({ name, followers, price, category }) => {
   const formattedFollowers = formatFollowers(followers);
   return (
     <>
-      <Card className="w-[240px] h-[265px] relative pt-8 shadow-2xl rounded-2xl max-h-60">
+      <Card className="w-[240px] h-[265px] relative shadow-2xl rounded-2xl max-h-60">
         <div className="flex flex-col items-center">
           <div className="absolute top-4 right-4 text-2xl text-lightGrey">
             <AiOutlineHeart className="hover:text-violet  border-lightGrey  " />

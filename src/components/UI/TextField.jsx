@@ -4,7 +4,8 @@ const TextField = styled.input.attrs((props) => ({
   type: props.type,
 }))`
   outline: none;
-  border: 1px solid var(--secondary-grey);
+  border: 1px solid
+    ${(props) => (props.isError ? '#D81F1F' : 'rgba(216, 197, 255, 0.7)')};
   border-radius: 0.5em;
   width: auto;
   line-height: 100%;

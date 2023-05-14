@@ -1,11 +1,9 @@
 class CustomError extends Error {
-  statusCode: number;
-  date: Date;
-  constructor(message: string ,statusCode: number, name?: string) {
+  constructor(message, statusCode, name) {
     super(message);
     this.statusCode = statusCode || 500;
-    this.name = name || "CustomError";
-    this.date = new Date();
+    this.name = name || 'Custom Error';
+    this.data = new Date();
   }
   toJSON() {
     return {
@@ -18,4 +16,5 @@ class CustomError extends Error {
     };
   }
 }
+
 export default CustomError;

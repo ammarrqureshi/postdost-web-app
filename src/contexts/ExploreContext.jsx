@@ -4,7 +4,7 @@ import { Persons } from '../Data/Influencer';
 export const ExploreContext = createContext();
 
 const ExploreProvider = (props) => {
-  //States to get the form data
+  //States to apply filter on data
   const [filterText, setFilterText] = useState('');
   const [filteredData, setFilteredData] = useState(Persons);
 

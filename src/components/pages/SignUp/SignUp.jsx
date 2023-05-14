@@ -1,34 +1,92 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { SignUpContext } from '../../../contexts/SignUpContext';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import { FaGoogle } from 'react-icons/fa';
 import logo from '../../../assets/logo.png';
 import TopLines from '../../UI/TopLines';
-import Checkbox from '../../UI/Checkbox';
+import Checkbox from '../../UI/SignUpCheckbox';
 import TextField from '../../UI/TextField';
 import Button from '../../UI/Button';
+import { useFormik } from 'formik';
+import * as yup from 'yup';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 const SignUp = () => {
+  const navigate = useNavigate();
+  const passwordRegex =
+    /^(?=.*[!@#$%^&*()\-_=+{};:,<.>/?])(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/;
+  //One UpperCase letter, one lower case letter, one number
+  const signupSchema = yup.object().shape({
+    firstName: yup
+      .string()
+      .min(3, 'Must be atleast 3 characters')
+      .max(10, 'Max of 8 characters allowed')
+      .required('Required'),
+    secondName: yup
+      .string()
+      .min(3, 'Must be atleast 3 characters')
+      .max(10, 'Max of 8 characters allowed'),
+    email: yup
+      .string()
+      .email('Please enter a valid email')
+      .required('Required'),
+    password: yup
+      .string()
+      .min(8, 'Must be atleast 8 characters')
+      .matches(passwordRegex, { message: 'Please create a Strong Password' })
+      .required('Required'),
+    // confirmPassword: yup
+    //   .string()
+    //   .oneOf([yup.ref('password'), null], 'Passwords must match!')
+    //   .required('Required'),
+    agreement: yup
+      .boolean()
+      .oneOf([true], 'Please accept term and Conditions')
+      .required('Required'),
+  });
+  const initialValues = {
+    firstName: '',
+    secondName: '',
+    email: '',
+    password: '',
+    agreement: false,
+  };
+  const onSubmit = async (values, actions) => {
+    const { firstName, secondName, email, password, agreement } = values;
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    axios
+      .post('http://localhost:8000/user/signup', {
+        firstName,
+        secondName,
+        email,
+        password,
+        agreement,
+      })
+      .then((response) => {
+        Cookies.set('token', response.data.token, { expires: 7 });
+        response.status === 201 && navigate('/');
+      })
+      .catch((error) => console.log(error));
+  };
+  const googleAuth = () => {
+    window.open(`${REACT_APP_API_URL}/auth/google/callback`, '_self');
+  };
   const {
-    firstName,
-    setFirstName,
-    secondName,
-    setSecondName,
-    email,
-    setEmail,
-    password,
-    setPassword,
-    agreement,
-    setAgreement,
-  } = useContext(SignUpContext);
+    values,
+    errors,
+    handleChange,
+    handleBlur,
+    touched,
+    handleSubmit,
+    isSubmitting,
+  } = useFormik({
+    initialValues,
+    validationSchema: signupSchema,
+    onSubmit,
+  });
   const [passwordVisibility, setPasswordVisibility] = useState(false);
   const togglePasswordVisibility = () => {
     setPasswordVisibility((visible) => !visible);
-  };
-  console.log(firstName, secondName, email, password, agreement);
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    console.log(event.target.values);
   };
 
   return (
@@ -54,48 +112,68 @@ const SignUp = () => {
           </div>
           <div className="grid gap-6 w-[25rem] text-sm ">
             <form
-              action="/signin"
-              method="post"
-              className="grid gap-6 pt-16 w-fit text-sm"
-              onSubmit={handleFormSubmit}
+              className="grid pt-16 w-fit text-sm"
+              onSubmit={handleSubmit}
+              autoComplete="off"
             >
-              <div className="flex gap-12  min-w-[25rem]">
+              {touched.firstName && errors.firstName && (
+                <p className="text-red">{errors.firstName}</p>
+              )}
+              <div className="flex gap-12 min-w-[25rem] mb-4">
                 <TextField
                   placeholder="First Name"
                   type="text"
                   id="firstName"
                   name="firstName"
-                  value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
+                  value={values.firstName}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  isError={errors.firstName && touched.firstName}
                   style={{ width: '11.5rem' }}
                 />
+                {errors.secondName && touched.secondName && (
+                  <p className="text-red">{errors.secondName}</p>
+                )}
                 <TextField
                   placeholder="Second Name"
                   type="text"
                   id="secondName"
                   name="secondName"
-                  value={secondName}
-                  onChange={(e) => setSecondName(e.target.value)}
+                  value={values.secondName}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  isError={errors.secondName && touched.secondName}
                   style={{ width: '11.5rem' }}
                 />
               </div>
+              {errors.email && touched.email && (
+                <p className="text-red">{errors.email}</p>
+              )}
               <TextField
-                placeholder="Enter Your Gmail"
-                id="gmail"
-                name="gmail"
+                placeholder="Enter Your email"
+                id="email"
+                name="email"
                 text="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={values.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                isError={touched.email && errors.email}
+                style={{ marginBottom: '1rem' }}
               />
+              {errors.password && touched.password && (
+                <p className="text-red">{errors.password}</p>
+              )}
               <div className="relative">
                 <TextField
                   placeholder="Enter Your Password"
                   type={passwordVisibility ? 'text' : 'password'}
-                  style={{ width: '26rem' }}
+                  style={{ width: '26rem', marginBottom: '1rem' }}
                   name="password"
                   id="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  value={values.password}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  isError={touched.password && errors.password}
                 />
                 <div
                   onClick={togglePasswordVisibility}
@@ -104,15 +182,21 @@ const SignUp = () => {
                   {passwordVisibility ? <AiFillEye /> : <AiFillEyeInvisible />}
                 </div>
               </div>
+              {touched.agreement && errors.agreement && (
+                <p className="text-red">{errors.agreement}</p>
+              )}
               <Checkbox
                 label="I understand and agree to Postdost Terms and conditions"
-                id="Agreement"
-                name="Agreement"
-                value="Agree"
-                setValue={setAgreement}
-                checked={false}
+                id="agreement"
+                name="agreement"
+                value={values.agreement}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                isError={touched.agreement && errors.agreement}
               />
-              <Button type="submit">Create Account</Button>
+              <Button type="submit" disabled={isSubmitting}>
+                Create Account
+              </Button>
             </form>
             <p className="text-center">
               Already have an account?{' '}
@@ -136,6 +220,7 @@ const SignUp = () => {
                   color: 'var(--black)',
                   border: '1px solid var(--black)',
                 }}
+                onClick={googleAuth}
               >
                 <FaGoogle className="absolute top-4 left-4" />
                 Continue with Google Account

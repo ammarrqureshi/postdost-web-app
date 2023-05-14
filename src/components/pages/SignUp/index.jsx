@@ -1,11 +1,6 @@
-import SignUp from './SignUp'
-import SignUpProvider from '../../../contexts/SignUpContext';
+import SignUp from './SignUp';
 const index = () => {
-  return (
-    <SignUpProvider>
-      <SignUp />
-    </SignUpProvider>
-  );
-}
+  return <SignUp />;
+};
 
-export default index
+export default index;

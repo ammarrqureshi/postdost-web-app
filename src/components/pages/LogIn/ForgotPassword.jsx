@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
-import { FaGoogle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.png';
-import TopLines from '../../UI/TopLines';
 import TextField from '../../UI/TextField';
 import Button from '../../UI/Button';
 const ForgotPassword = () => {
@@ -12,7 +11,6 @@ const ForgotPassword = () => {
   };
   return (
     <section className="relative m-auto max-w-screen max-h-screen overflow-hidden ">
-      <TopLines flip="-scale-x-100" />
       <div className="flex">
         {/* LeftSide */}
         <div className="w-[50%] h-screen pt-10 flex flex-col pl-40 justify-center">
@@ -33,6 +31,12 @@ const ForgotPassword = () => {
               name="gmail"
             />
             <Button>Forgot Password</Button>
+            <p className="text-l">
+              Dont' have account?
+              <Link to="/signup">
+                <span className="font-bold"> SignUp</span>
+              </Link>
+            </p>
           </div>
         </div>
         {/* Show this when Their Email is verified via optp or verifying by mail, show the hidden in the end to flex!*/}
