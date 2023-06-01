@@ -12,7 +12,7 @@ const LogIn = () => {
   };
   return (
     <section className="relative m-auto max-w-screen max-h-screen overflow-hidden ">
-      <TopLines flip="-scale-x-100" />
+      //<TopLines flip="-scale-x-100" />
       <div className="flex">
         {/* LeftSide */}
         <div className="w-[50%] h-screen pt-10 flex flex-col items-center justify-center">
