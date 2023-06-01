@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import { FaGoogle } from 'react-icons/fa';
 import logo from '../../../assets/logo.png';
-import TopLines from '../../UI/TopLines';
+//import TopLines from '../../UI/TopLines';
 import TextField from '../../UI/TextField';
 import Button from '../../UI/Button';
 const LogIn = () => {
