@@ -14,7 +14,8 @@ function InfluencerCard(){
     const ctx=useContext(InfluencerContext);
 
     return(
-        <Card className={classes.influencerCard}>
+        <Card>
+        <div className={classes.influencerCard}>
           <InfluencerImage displayImage={ctx.profileImg}></InfluencerImage>
           <section className={classes.cardText}>
           <h1>{ctx.influencerName}</h1>
@@ -35,6 +36,7 @@ function InfluencerCard(){
           </div>
           <Button>Buy now <span>{ctx.initialPrice}$</span></Button>
           <Button $secondary>Message now</Button>
+          </div>
          </Card>
     )}
 
