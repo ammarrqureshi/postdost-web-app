@@ -3,7 +3,7 @@ import { SignUpContext } from '../../../contexts/SignUpContext';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import { FaGoogle } from 'react-icons/fa';
 import logo from '../../../assets/logo.png';
-import TopLines from '../../UI/TopLines';
+//import TopLines from '../../UI/TopLines';
 import Checkbox from '../../UI/Checkbox';
 import TextField from '../../UI/TextField';
 import Button from '../../UI/Button';
@@ -32,7 +32,7 @@ const SignUp = () => {
 
   return (
     <section className="relative m-auto max-w-screen max-h-screen overflow-hidden ">
-      <TopLines right="-right-9" />
+     // <TopLines right="-right-9" />
       <div className="flex">
         {/* LeftSide */}
         <div className="w-[50%] h-screen flex items-center justify-center">
